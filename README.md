@@ -1,44 +1,33 @@
-<p align="center"><img src="assets/hero.svg" alt="Ming You / itzKLAUS — agent infrastructure, open source and Web3" width="100%"></p>
+<p align="center"><img src="assets/xianxia-banner.png" alt="An ink-painted mountain path, a lone cultivator and a pavilion above the clouds" width="100%"></p>
 
-<p align="center">
-  <a href="https://github.com/itzKLAUS?tab=repositories">Projects</a> ·
-  <a href="https://github.com/pulls?q=is%3Apr+author%3AitzKLAUS">Contributions</a> ·
-  <a href="https://github.com/itzKLAUS?tab=achievements">Achievements</a> ·
-  <a href="https://github.com/sponsors/itzKLAUS">Support the work</a>
-</p>
+# Hey, I'm Klaus.
 
-## Building systems that earn trust
+Ming You · **itzKLAUS** · Shadow Sect
 
-I'm **Ming You**, also known as **Klaus**. I build tools for reliable automation and contribute fixes to open-source projects. My current contribution focus is **Web3**: useful patches, reproducible bugs and careful verification.
+I work on Python infrastructure and Ethereum tooling. Lately, I've been contributing to Web3 projects and building a few tools for the parts of automation that get messy: permissions, worker crashes and keeping track of what actually happened.
 
-The questions behind my infrastructure work are simple: **Who authorized this action? What happens when a worker crashes? How do we account for the result?**
+## What I'm building
 
-## Three tools. Three responsibilities.
+| Project | What it's for |
+| :-- | :-- |
+| [Agent Outbox](https://github.com/itzKLAUS/agent-outbox) | Save a business change and its queued action together, then handle retries and uncertain results. |
+| [Delegation Gate](https://github.com/itzKLAUS/delegation-gate) | Give a worker limited permission, with shared quotas and a way to revoke it. |
+| [Action Ledger](https://github.com/itzKLAUS/action-ledger) | Review sensitive actions, reserve a budget and keep an audit trail. |
 
-| Project | The problem it tackles | Built for |
-| :-- | :-- | :-- |
-| [**Agent Outbox**](https://github.com/itzKLAUS/agent-outbox) | A business write survives, but its intended external action gets lost—or the result becomes uncertain. | Python applications and dispatch workers |
-| [**Delegation Gate**](https://github.com/itzKLAUS/delegation-gate) | A worker needs a smaller grant of authority without a root credential or an independent copy of the quota. | Trusted tool gateways and agent runtimes |
-| [**Action Ledger**](https://github.com/itzKLAUS/action-ledger) | Consequential automation needs policy checks, budget reservations, independent review and a traceable result. | Teams operating automation |
+All three are MIT licensed. Their READMEs include examples, test results and the deployment details that still need care.
 
-These projects have distinct integration boundaries. Read each project's verification and deployment notes before using it for consequential work.
+## Around GitHub
 
-## Open-source work
+A few patches I've submitted:
 
-Selected contributions to upstream projects—these are contributions, not affiliations:
+- **MetaMask:** [ABI arrays](https://github.com/MetaMask/abi-utils/pull/99), [unsigned integers](https://github.com/MetaMask/abi-utils/pull/100), [signature utility types](https://github.com/MetaMask/eth-sig-util/pull/429).
+- **Ethereum:** [type inference](https://github.com/ethereum/eth-utils/pull/336), [function signatures](https://github.com/ethereum/eth-utils/pull/337).
+- **Microsoft Scope:** [preview layout](https://github.com/microsoft/scope/pull/1459), [nested previews](https://github.com/microsoft/scope/pull/1464).
 
-- **MetaMask:** [ABI array encoding](https://github.com/MetaMask/abi-utils/pull/99), [unsigned integer validation](https://github.com/MetaMask/abi-utils/pull/100) and [signature utility typing](https://github.com/MetaMask/eth-sig-util/pull/429).
-- **Ethereum:** [utility type inference](https://github.com/ethereum/eth-utils/pull/336) and [signature preservation](https://github.com/ethereum/eth-utils/pull/337).
-- **Microsoft Scope:** [full-bleed preview layout](https://github.com/microsoft/scope/pull/1459) and [nested preview coverage](https://github.com/microsoft/scope/pull/1464).
+The PR links show where each one stands. You can find **Pull Shark** and **Quickdraw** on my [profile](https://github.com/itzKLAUS?tab=achievements).
 
-Each link shows the current review and merge status. GitHub achievements include **Pull Shark** and **Quickdraw**; [view the profile badges](https://github.com/itzKLAUS?tab=achievements).
+Mostly **Python, TypeScript, SQL and Django**. Right now, Web3 is where I'm spending my contribution time.
 
-## How I approach the work
+If you use one of the projects, I'd like to hear what worked and what broke. Issues and small fixes are welcome.
 
-**Reproduce the failure → make a focused change → verify the behavior → document the limits.**
-
-Python · TypeScript · SQL · Django · GitHub Actions · Ethereum tooling
-
-Good issue reports, integration feedback and code reviews help these projects improve. Sponsorship supports maintenance, regression testing and documentation; it does not purchase security guarantees or roadmap commitments.
-
-<p align="center"><a href="https://github.com/sponsors/itzKLAUS">♥ Sponsor open-source maintenance</a> · <a href="https://x.com/itzklaus2">Find me on X</a></p>
+[Projects](https://github.com/itzKLAUS?tab=repositories) · [PRs](https://github.com/pulls?q=is%3Apr+author%3AitzKLAUS) · [X](https://x.com/itzklaus2) · [Sponsor](https://github.com/sponsors/itzKLAUS)
