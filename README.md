@@ -4,12 +4,13 @@
 
 Ming You · **itzKLAUS** · Shadow Sect
 
-I work on Python infrastructure and Ethereum tooling. Lately, I've been contributing to Web3 projects and building a few tools for the parts of automation that get messy: permissions, worker crashes and keeping track of what actually happened.
+I work on AI tooling, infrastructure and Ethereum tools. Lately, I've been building ways to keep agent context consistent, alongside tools for the parts of automation that get messy: permissions, worker crashes and keeping track of what actually happened.
 
 ## What I'm building
 
 | Project | What it's for |
 | :-- | :-- |
+| [Context Pact](https://github.com/itzKLAUS/context-pact) | Select an agent's context under explicit rules, keeping prerequisites together and showing the tradeoffs. TypeScript, with scoped Lean proof artifacts. |
 | [Agent Outbox](https://github.com/itzKLAUS/agent-outbox) | Save a business change and its queued action together, then handle retries and uncertain results. |
 | [Delegation Gate](https://github.com/itzKLAUS/delegation-gate) | Give a worker limited permission, with shared quotas and a way to revoke it. |
 | [Action Ledger](https://github.com/itzKLAUS/action-ledger) | Review sensitive actions, reserve a budget and keep an audit trail. |
